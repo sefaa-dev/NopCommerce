@@ -1,7 +1,7 @@
 {
   "Group": "code is life",
-  "FriendlyName": "code is life Swiper Plugin",
-  "SystemName": "codeislife.Widgets.SwiperSlider",
+  "FriendlyName": "code is life Swipejs Plugin",
+  "SystemName": "ccodeislife.Widgets.SwiperSlider",
   "Version": "1.0",
   "SupportedVersions": [ "4.30" ],
   "Author": "code is life team",

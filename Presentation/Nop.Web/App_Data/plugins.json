@@ -74,6 +74,10 @@
     {
       "SystemName": "codeislife_firstplugin",
       "Version": "1.0"
+    },
+    {
+      "SystemName": "ccodeislife.Widgets.SwiperSlider",
+      "Version": "1.0"
     }
   ],
   "PluginNamesToUninstall": [],
