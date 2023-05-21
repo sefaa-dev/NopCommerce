@@ -1,16 +1,18 @@
-﻿using Nop.Services.Plugins;
+﻿using Nop.Services.Localization;
+using Nop.Services.Plugins;
 
 namespace codeislife.Widgets.SwiperSlider
 {
     public class SwiperSliderPlugin : BasePlugin
     {
         #region Fields
-
+        private readonly ILocalizationService _localizationService;
         #endregion
 
         #region Ctor
-        public SwiperSliderPlugin()
+        public SwiperSliderPlugin(ILocalizationService localizationService)
         {
+            _localizationService = localizationService;
 
         }
         #endregion
@@ -18,7 +20,7 @@ namespace codeislife.Widgets.SwiperSlider
         #region Methods
         public override void Install()
         {
-            base.Install();
+            _localizationService.AddOrUpdatePluginLocaleResource("codeislife.Widgets.SwiperSlider.test", "test");
         }
 
         public override void Uninstall()
@@ -28,7 +30,7 @@ namespace codeislife.Widgets.SwiperSlider
 
         public override void PreparePluginToUninstall()
         {
-            base.PreparePluginToUninstall();
+            _localizationService.DeletePluginLocaleResources("codeislife.Widgets.SwiperSlider");
         }
 
         //public override string GetConfigurationPageUrl()
